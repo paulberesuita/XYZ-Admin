@@ -1,2 +1,2 @@
 # XYZ-Admin
-## An admin dashboard built in Angular 2
+ An admin dashboard built in Angular 2
