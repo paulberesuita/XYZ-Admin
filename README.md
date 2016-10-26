@@ -142,6 +142,11 @@ XYZ-Admin
   index.html
 ```
 
+In your terminal, run the following command
+```
+npm start
+```
+
 ## Architecture
 !["Architecture"] (https://github.com/paulberesuita/XYZ-Admin/blob/master/README/xyz-%20admin-architecture.png "XYZ Admin")
 
