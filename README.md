@@ -21,3 +21,6 @@ XYZ-Admin
  systemjs.config.js
  tsconfig.json
 ```
+## Architecture
+!["Architecture"] ( "XYZ Admin")
+
