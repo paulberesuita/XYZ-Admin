@@ -15,8 +15,8 @@ npm install
 ```
 This command will generate the node_modules folder containing all of your packages - it should look like the following
 
+**Current app folder structure**
 ```
-(Current app folder structure)
 XYZ-Admin
   node_modules (folder)
   package.json
@@ -28,8 +28,21 @@ XYZ-Admin
 
 In the root of your folder, create a folder named "app" and inside create a file named "app.module.ts"
 
+Inside your app.module.ts add the following content
+
+**app.module.ts**
 ```
-(Current app folder structure)
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+@NgModule({
+imports: [ BrowserModule]
+})
+
+export class AppModule { }
+```
+**Current app folder structure**
+```
 XYZ-Admin
   app
     app.module.ts
