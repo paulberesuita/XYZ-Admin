@@ -51,6 +51,35 @@ XYZ-Admin
   tsconfig.json
 ```
 
+**Step 3: Create app component and add it the app module**
+
+In the root of your folder, create a file named "app.component.ts"
+
+**app.component.ts**
+```
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `
+      <h1>App Component</h1>
+  `
+})
+export class AppComponent { }
+```
+
+**Current app folder structure**
+```
+XYZ-Admin
+  app
+    app.module.ts
+    app.component.ts
+  node_modules (folder)
+  package.json
+  systemjs.config.js
+  tsconfig.json
+```
+
 ## Architecture
 !["Architecture"] (https://github.com/paulberesuita/XYZ-Admin/blob/master/README/xyz-%20admin-architecture.png "XYZ Admin")
 
