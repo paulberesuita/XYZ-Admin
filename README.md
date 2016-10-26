@@ -15,7 +15,7 @@ npm install
 ```
 This command will generate the node_modules folder containing all of your packages - it should look like the following
 
-**Current app folder structure**
+**Current app folder structure for step 1**
 ```
 XYZ-Admin
   node_modules (folder)
@@ -40,7 +40,7 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 export class AppModule { }
 ```
-**Current app folder structure**
+**Current app folder structure for step 2**
 ```
 XYZ-Admin
   app
@@ -51,7 +51,7 @@ XYZ-Admin
   tsconfig.json
 ```
 
-**Step 3: Create app component and add it the app module**
+**Step 3: Create app component and add it to the app module**
 
 In the root of your folder, create a file named "app.component.ts"
 
@@ -68,7 +68,7 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-**Current app folder structure**
+**Current app folder structure for step 3**
 ```
 XYZ-Admin
   app
