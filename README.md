@@ -26,7 +26,7 @@ XYZ-Admin
 
 **Step 2: Create app module**
 
-In the root of your folder, create a folder named "app" and inside create a file named "app.module.ts"
+In the root of your app, create a folder named "app" and inside create a file named "app.module.ts"
 
 Inside your app.module.ts add the following content
 
@@ -53,7 +53,7 @@ XYZ-Admin
 
 **Step 3: Create app component and add it to the app module**
 
-In the root of your folder, create a file named "app.component.ts"
+Inside the app folder, create a file named "app.component.ts" and add the following
 
 **app.component.ts**
 ```
@@ -78,6 +78,68 @@ XYZ-Admin
   package.json
   systemjs.config.js
   tsconfig.json
+```
+
+**Step 4: Let's start our app!**
+
+Inside the app folder, create a file named "main.ts" and add the following
+
+**main.ts**
+```
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
+```
+In the root of your app, create a file named "index.html" and add the following
+
+**index.html**
+```
+<html>
+  <head>
+    <base href="/">
+    <title>Angular 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ 
+        console.error(err); 
+      });
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
+```
+
+**Current app folder structure for step 4**
+```
+XYZ-Admin
+  app
+    app.module.ts
+    app.component.ts
+    main.ts
+  node_modules (folder)
+  package.json
+  systemjs.config.js
+  tsconfig.json
+  index.html
 ```
 
 ## Architecture
