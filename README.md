@@ -22,5 +22,7 @@ XYZ-Admin
  tsconfig.json
 ```
 ## Architecture
-!["Architecture"] (https://github.com/paulberesuita/XYZ-Admin/blob/master/README/xyz-%20admin.png "XYZ Admin")
+!["Architecture"] (https://github.com/paulberesuita/XYZ-Admin/blob/master/README/xyz-%20admin-architecture.png "XYZ Admin")
 
+## Current XYZ Admin Template
+!["XYZ Admin Template"] (https://github.com/paulberesuita/XYZ-Admin/blob/master/README/xyz-admin-current.png "XYZ Admin")
