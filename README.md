@@ -22,5 +22,5 @@ XYZ-Admin
  tsconfig.json
 ```
 ## Architecture
-!["Architecture"] ( "XYZ Admin")
+!["Architecture"] (https://github.com/paulberesuita/XYZ-Admin/blob/master/README/xyz-%20admin.png "XYZ Admin")
 
