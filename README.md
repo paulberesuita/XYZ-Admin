@@ -36,9 +36,8 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
-imports: [ BrowserModule]
+  imports: [ BrowserModule]
 })
-
 export class AppModule { }
 ```
 **Current app folder structure**
