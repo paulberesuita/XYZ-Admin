@@ -2,7 +2,8 @@
 XYZ Admin -- is a fully responsive admin template based on Angular 2 and Bootstrap 3 framework.
 
 ## Steps
-Step 1: Understanding the configuration files and getting the packages we need
+**Step 1**: Understanding the configuration files and installing the packages we needed.
+
 We have 3 configuration files to setup our Angular 2 admin template app.
 - package.json: contains all the dependencies needed for the app.
 - tsconfig.json: setups the Typescript compiler to generate valid JavaScript
